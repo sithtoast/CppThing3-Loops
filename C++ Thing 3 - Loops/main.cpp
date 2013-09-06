@@ -7,12 +7,26 @@
 //
 
 #include <iostream>
+#include <iomanip>
+
+using namespace std;
+
 
 int main(int argc, const char * argv[])
 {
+    double hours = 0.00;
+    double rate = 0.00;
+    double drate = rate + (rate*0.5);
 
-    // insert code here...
-    std::cout << "Hello, World! Testing...\n";
+    double bux;
+
+    cout << "Enter number of hours worked: ";
+    cin >> hours;
+    cout << "Enter hourly rate: ";
+    cin >> rate;
+    bux = hours * rate;
+    cout << "Your salary is: " << setprecision(2) << fixed << bux << endl;
+
 
     return 0;
 }
