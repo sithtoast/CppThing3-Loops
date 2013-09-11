@@ -22,9 +22,9 @@ int main(int argc, const char * argv[])
     double otbux;
     double bux;
 
+    cout << "Enter number of hours worked: (-1 to end) ";
+    cin >> hours;
     while (hours != -1) {
-        cout << "Enter number of hours worked: (-1 to end) ";
-        cin >> hours;
         cout << "Enter hourly rate: ($00.00) ";
         cin >> rate;
         if (hours >= 41) {
@@ -42,7 +42,8 @@ int main(int argc, const char * argv[])
             bux = hours * rate;
             cout << "Your salary is: " << setprecision(2) << fixed << bux << endl;
         }
-
+        cout << "Enter number of hours worked: (-1 to end) ";
+        cin >> hours;
     }
     return 0;
     }
